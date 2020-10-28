@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <ul class="nav">
+        <li role="presentation" class="nav-item"><a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Projects</a></li>
+        <li role="presentation" class="nav-item"><a class="nav-link"  routerLink="/users" routerLinkActive="active">Users</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

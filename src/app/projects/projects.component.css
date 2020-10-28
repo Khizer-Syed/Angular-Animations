@@ -1,0 +1,51 @@
+.inactive {
+    border: 1px solid #ccc;
+}
+
+/* .marked {
+    border: 2px solid blue;
+    transition: border-color 1s;
+    animation: bump 1s ease-in;
+} */
+
+
+
+.loading-bar {
+    width: 200px;
+    height: 20px;
+    border: 1px solid black;
+    transform: translateX(50%);
+}
+
+.loading-bar-element {
+    width: 0;
+    height: 20px;
+    background-color: deepskyblue;
+    animation: loading 2s ease-out infinite;
+}
+
+@keyframes loading {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 50%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes bump {
+    0% {
+        transform : scale(1)
+    }
+    50% {
+        transform : scale(1.02)
+    }
+
+    100% {
+        transform : scale(1)
+    }
+}
